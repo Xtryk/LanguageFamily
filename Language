@@ -1,0 +1,36 @@
+public class Language{
+
+protected String name;
+protected int numSpeakers;
+protected String regionsSpoken;
+protected String wordOrder;
+
+Language(String inputName, int inputNum, String inputRegions, String inputOrder){
+    name = inputName;
+    numSpeakers = inputNum;
+    regionsSpoken = inputRegions;
+    wordOrder = inputOrder;
+  }
+  
+  public void getInfo() {
+    System.out.println(this.name + " is spoken by " + this.numSpeakers + " people mainly in " + this.regionsSpoken + ".");
+    System.out.println("The language follows the word order: " + this.wordOrder);
+
+  }
+  public static void main(String[] args){
+    
+    Language Polish = new Language("Polish", 48000000, "Poland", "subject, verb, object");
+    //Polish.getInfo();
+    
+    Language Mayan = new Mayan("Ki'che'", 23300000);
+    //Mayan.getInfo();
+
+    Language Chinese = new SinoTibetan("Mandarin Chinese", 55000000);
+    Language Burmese = new SinoTibetan("Burmese", 22000000);
+    
+    Chinese.getInfo();
+    Burmese.getInfo();
+
+    
+  }  
+}
