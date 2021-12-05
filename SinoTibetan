@@ -1,0 +1,15 @@
+class SinoTibetan extends Language{
+
+  SinoTibetan(String inputName,int inputNum){
+    super(inputName, inputNum, "Asia" , "subject, object, verb");
+    if (inputName.contains("Chinese")) {
+      this.wordOrder = "subject, verb, object";
+
+    }
+     
+  }
+  
+  public static void maing(String[] args){
+    
+  }
+}
