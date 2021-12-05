@@ -1,0 +1,10 @@
+class Mayan extends Language{
+
+  Mayan(String inputName,int inputNum){
+    super(inputName, inputNum, "Central America" , "verb, object, subject"); 
+  }
+  
+  public static void maing(String[] args){
+    
+  }
+}
